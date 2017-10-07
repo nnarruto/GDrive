@@ -109,12 +109,13 @@ public class Quickstart {
     }
 
     public static void main(String[] args) throws IOException {
+	    
+        // Build a new authorized API client service.
+        Drive service = getDriveService();
 	/*	
         System.out.println("");
         System.out.println("Exemplo 1....");
         System.out.println("");
-        // Build a new authorized API client service.
-        Drive service = getDriveService();
 
         // Print the names and IDs for up to 10 files.
         FileList result = service.files().list()
